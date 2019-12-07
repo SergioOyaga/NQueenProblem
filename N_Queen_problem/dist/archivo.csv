@@ -1,0 +1,805 @@
+Type of crossover,Generation,Mean,Best 
+Order Crossover,0,7.95,10
+Cycle Crossover,0,7.95,10
+Elitism Order Crossover,0,7.95,10
+Elitism Cycle Crossover,0,7.95,2
+Order Crossover,1,7.1,10
+Cycle Crossover,1,5.05,2
+Elitism Order Crossover,1,5.15,2
+Elitism Cycle Crossover,1,6.0,4
+Order Crossover,2,6.2,6
+Cycle Crossover,2,4.5,6
+Elitism Order Crossover,2,4.7,2
+Elitism Cycle Crossover,2,4.25,2
+Order Crossover,3,5.9,0
+Cycle Crossover,3,3.45,2
+Elitism Order Crossover,3,4.9,2
+Elitism Cycle Crossover,3,2.8,8
+Order Crossover,4,3.55,6
+Cycle Crossover,4,4.35,2
+Elitism Order Crossover,4,4.3,12
+Elitism Cycle Crossover,4,2.35,8
+Order Crossover,5,4.25,0
+Cycle Crossover,5,2.65,2
+Elitism Order Crossover,5,6.0,8
+Elitism Cycle Crossover,5,2.4,8
+Order Crossover,6,3.8,8
+Cycle Crossover,6,2.35,8
+Elitism Order Crossover,6,4.75,6
+Elitism Cycle Crossover,6,1.7,0
+Order Crossover,7,3.45,4
+Cycle Crossover,7,1.4,2
+Elitism Order Crossover,7,4.8,6
+Elitism Cycle Crossover,7,2.0,0
+Order Crossover,8,4.4,4
+Cycle Crossover,8,2.7,6
+Elitism Order Crossover,8,5.2,10
+Elitism Cycle Crossover,8,2.3,4
+Order Crossover,9,4.2,2
+Cycle Crossover,9,3.05,0
+Elitism Order Crossover,9,4.55,6
+Elitism Cycle Crossover,9,1.25,0
+Order Crossover,10,3.3,4
+Cycle Crossover,10,2.05,0
+Elitism Order Crossover,10,5.2,6
+Elitism Cycle Crossover,10,1.95,0
+Order Crossover,11,3.85,8
+Cycle Crossover,11,2.1,0
+Elitism Order Crossover,11,5.25,0
+Elitism Cycle Crossover,11,2.5,6
+Order Crossover,12,3.85,2
+Cycle Crossover,12,2.1,0
+Elitism Order Crossover,12,5.35,2
+Elitism Cycle Crossover,12,2.7,0
+Order Crossover,13,4.05,6
+Cycle Crossover,13,1.95,0
+Elitism Order Crossover,13,4.75,8
+Elitism Cycle Crossover,13,2.15,0
+Order Crossover,14,4.35,2
+Cycle Crossover,14,2.85,0
+Elitism Order Crossover,14,5.35,4
+Elitism Cycle Crossover,14,2.05,6
+Order Crossover,15,4.4,4
+Cycle Crossover,15,1.6,0
+Elitism Order Crossover,15,5.4,6
+Elitism Cycle Crossover,15,1.65,4
+Order Crossover,16,3.4,6
+Cycle Crossover,16,1.85,6
+Elitism Order Crossover,16,5.35,4
+Elitism Cycle Crossover,16,1.7,0
+Order Crossover,17,3.55,2
+Cycle Crossover,17,1.95,0
+Elitism Order Crossover,17,4.65,4
+Elitism Cycle Crossover,17,2.85,0
+Order Crossover,18,3.2,0
+Cycle Crossover,18,1.85,0
+Elitism Order Crossover,18,5.8,8
+Elitism Cycle Crossover,18,2.35,2
+Order Crossover,19,5.4,0
+Cycle Crossover,19,2.3,6
+Elitism Order Crossover,19,5.55,10
+Elitism Cycle Crossover,19,2.05,4
+Order Crossover,20,4.2,6
+Cycle Crossover,20,2.55,8
+Elitism Order Crossover,20,5.0,6
+Elitism Cycle Crossover,20,1.85,0
+Order Crossover,21,3.3,4
+Cycle Crossover,21,2.75,6
+Elitism Order Crossover,21,4.1,10
+Elitism Cycle Crossover,21,2.1,2
+Order Crossover,22,3.75,2
+Cycle Crossover,22,1.5,0
+Elitism Order Crossover,22,5.15,4
+Elitism Cycle Crossover,22,1.5,8
+Order Crossover,23,3.75,2
+Cycle Crossover,23,2.65,2
+Elitism Order Crossover,23,5.2,4
+Elitism Cycle Crossover,23,1.9,0
+Order Crossover,24,4.35,6
+Cycle Crossover,24,2.5,0
+Elitism Order Crossover,24,5.45,10
+Elitism Cycle Crossover,24,3.05,4
+Order Crossover,25,3.75,4
+Cycle Crossover,25,1.5,0
+Elitism Order Crossover,25,3.7,0
+Elitism Cycle Crossover,25,1.6,2
+Order Crossover,26,3.85,0
+Cycle Crossover,26,2.5,2
+Elitism Order Crossover,26,3.95,0
+Elitism Cycle Crossover,26,1.45,4
+Order Crossover,27,3.5,6
+Cycle Crossover,27,2.65,0
+Elitism Order Crossover,27,4.8,6
+Elitism Cycle Crossover,27,2.9,0
+Order Crossover,28,3.6,0
+Cycle Crossover,28,1.85,8
+Elitism Order Crossover,28,4.85,0
+Elitism Cycle Crossover,28,1.55,0
+Order Crossover,29,3.45,8
+Cycle Crossover,29,1.7,0
+Elitism Order Crossover,29,5.45,2
+Elitism Cycle Crossover,29,2.7,8
+Order Crossover,30,3.3,10
+Cycle Crossover,30,2.35,0
+Elitism Order Crossover,30,5.2,4
+Elitism Cycle Crossover,30,2.8,0
+Order Crossover,31,3.45,0
+Cycle Crossover,31,2.25,0
+Elitism Order Crossover,31,6.1,4
+Elitism Cycle Crossover,31,1.2,0
+Order Crossover,32,3.7,4
+Cycle Crossover,32,1.4,0
+Elitism Order Crossover,32,3.75,0
+Elitism Cycle Crossover,32,2.25,0
+Order Crossover,33,3.6,8
+Cycle Crossover,33,1.7,2
+Elitism Order Crossover,33,4.75,10
+Elitism Cycle Crossover,33,2.4,8
+Order Crossover,34,2.85,0
+Cycle Crossover,34,2.05,0
+Elitism Order Crossover,34,4.0,8
+Elitism Cycle Crossover,34,2.2,0
+Order Crossover,35,3.55,0
+Cycle Crossover,35,1.6,0
+Elitism Order Crossover,35,4.85,6
+Elitism Cycle Crossover,35,2.95,8
+Order Crossover,36,3.05,2
+Cycle Crossover,36,3.6,0
+Elitism Order Crossover,36,5.5,0
+Elitism Cycle Crossover,36,2.15,4
+Order Crossover,37,3.45,6
+Cycle Crossover,37,2.85,0
+Elitism Order Crossover,37,5.55,6
+Elitism Cycle Crossover,37,1.75,0
+Order Crossover,38,4.1,6
+Cycle Crossover,38,2.85,6
+Elitism Order Crossover,38,5.25,6
+Elitism Cycle Crossover,38,2.05,4
+Order Crossover,39,4.45,4
+Cycle Crossover,39,2.1,2
+Elitism Order Crossover,39,5.25,8
+Elitism Cycle Crossover,39,1.85,0
+Order Crossover,40,3.65,0
+Cycle Crossover,40,1.55,0
+Elitism Order Crossover,40,5.65,8
+Elitism Cycle Crossover,40,2.6,6
+Order Crossover,41,3.35,0
+Cycle Crossover,41,1.85,4
+Elitism Order Crossover,41,5.2,10
+Elitism Cycle Crossover,41,2.6,4
+Order Crossover,42,2.75,6
+Cycle Crossover,42,1.75,0
+Elitism Order Crossover,42,5.7,6
+Elitism Cycle Crossover,42,3.1,4
+Order Crossover,43,4.25,8
+Cycle Crossover,43,2.0,2
+Elitism Order Crossover,43,5.3,4
+Elitism Cycle Crossover,43,2.8,0
+Order Crossover,44,4.15,4
+Cycle Crossover,44,1.25,0
+Elitism Order Crossover,44,5.65,2
+Elitism Cycle Crossover,44,2.35,0
+Order Crossover,45,4.4,6
+Cycle Crossover,45,2.35,4
+Elitism Order Crossover,45,4.25,0
+Elitism Cycle Crossover,45,2.65,0
+Order Crossover,46,4.35,2
+Cycle Crossover,46,2.15,0
+Elitism Order Crossover,46,5.45,6
+Elitism Cycle Crossover,46,2.45,0
+Order Crossover,47,4.6,0
+Cycle Crossover,47,2.15,0
+Elitism Order Crossover,47,4.7,10
+Elitism Cycle Crossover,47,2.15,0
+Order Crossover,48,4.35,2
+Cycle Crossover,48,1.85,8
+Elitism Order Crossover,48,5.2,4
+Elitism Cycle Crossover,48,2.05,4
+Order Crossover,49,3.5,0
+Cycle Crossover,49,2.25,4
+Elitism Order Crossover,49,4.8,4
+Elitism Cycle Crossover,49,2.75,2
+Order Crossover,50,3.75,4
+Cycle Crossover,50,2.65,4
+Elitism Order Crossover,50,5.15,8
+Elitism Cycle Crossover,50,1.6,0
+Order Crossover,51,3.45,6
+Cycle Crossover,51,3.1,0
+Elitism Order Crossover,51,5.45,6
+Elitism Cycle Crossover,51,2.05,4
+Order Crossover,52,2.95,8
+Cycle Crossover,52,2.7,4
+Elitism Order Crossover,52,5.35,6
+Elitism Cycle Crossover,52,3.2,0
+Order Crossover,53,3.95,2
+Cycle Crossover,53,1.65,0
+Elitism Order Crossover,53,4.85,6
+Elitism Cycle Crossover,53,2.35,0
+Order Crossover,54,3.35,6
+Cycle Crossover,54,1.4,2
+Elitism Order Crossover,54,4.35,6
+Elitism Cycle Crossover,54,2.5,10
+Order Crossover,55,4.05,2
+Cycle Crossover,55,1.55,0
+Elitism Order Crossover,55,5.2,2
+Elitism Cycle Crossover,55,1.85,0
+Order Crossover,56,2.9,0
+Cycle Crossover,56,2.5,0
+Elitism Order Crossover,56,4.95,8
+Elitism Cycle Crossover,56,1.35,6
+Order Crossover,57,3.8,2
+Cycle Crossover,57,2.2,0
+Elitism Order Crossover,57,5.4,8
+Elitism Cycle Crossover,57,2.45,4
+Order Crossover,58,4.85,6
+Cycle Crossover,58,1.8,10
+Elitism Order Crossover,58,5.0,0
+Elitism Cycle Crossover,58,3.05,0
+Order Crossover,59,3.9,6
+Cycle Crossover,59,2.05,8
+Elitism Order Crossover,59,5.8,6
+Elitism Cycle Crossover,59,2.05,4
+Order Crossover,60,3.45,6
+Cycle Crossover,60,2.75,0
+Elitism Order Crossover,60,5.2,10
+Elitism Cycle Crossover,60,2.6,2
+Order Crossover,61,3.5,4
+Cycle Crossover,61,1.6,0
+Elitism Order Crossover,61,4.05,0
+Elitism Cycle Crossover,61,1.9,4
+Order Crossover,62,4.0,0
+Cycle Crossover,62,1.75,0
+Elitism Order Crossover,62,3.9,4
+Elitism Cycle Crossover,62,2.25,2
+Order Crossover,63,3.6,6
+Cycle Crossover,63,1.75,4
+Elitism Order Crossover,63,4.95,4
+Elitism Cycle Crossover,63,3.0,4
+Order Crossover,64,3.8,6
+Cycle Crossover,64,1.85,0
+Elitism Order Crossover,64,4.4,8
+Elitism Cycle Crossover,64,3.25,4
+Order Crossover,65,3.45,2
+Cycle Crossover,65,2.2,8
+Elitism Order Crossover,65,4.95,6
+Elitism Cycle Crossover,65,1.1,2
+Order Crossover,66,4.05,6
+Cycle Crossover,66,1.85,2
+Elitism Order Crossover,66,4.5,8
+Elitism Cycle Crossover,66,2.05,0
+Order Crossover,67,3.95,6
+Cycle Crossover,67,2.05,0
+Elitism Order Crossover,67,4.15,4
+Elitism Cycle Crossover,67,2.65,0
+Order Crossover,68,4.15,6
+Cycle Crossover,68,2.3,0
+Elitism Order Crossover,68,4.95,8
+Elitism Cycle Crossover,68,1.8,8
+Order Crossover,69,3.65,2
+Cycle Crossover,69,2.1,0
+Elitism Order Crossover,69,4.8,6
+Elitism Cycle Crossover,69,2.95,0
+Order Crossover,70,4.1,0
+Cycle Crossover,70,2.45,0
+Elitism Order Crossover,70,5.9,6
+Elitism Cycle Crossover,70,1.35,0
+Order Crossover,71,3.75,0
+Cycle Crossover,71,1.4,4
+Elitism Order Crossover,71,4.75,8
+Elitism Cycle Crossover,71,2.45,0
+Order Crossover,72,3.7,0
+Cycle Crossover,72,1.55,6
+Elitism Order Crossover,72,5.7,2
+Elitism Cycle Crossover,72,2.85,0
+Order Crossover,73,3.2,6
+Cycle Crossover,73,2.4,2
+Elitism Order Crossover,73,4.55,0
+Elitism Cycle Crossover,73,1.7,0
+Order Crossover,74,3.9,8
+Cycle Crossover,74,3.0,0
+Elitism Order Crossover,74,3.55,6
+Elitism Cycle Crossover,74,2.25,0
+Order Crossover,75,4.0,6
+Cycle Crossover,75,2.1,0
+Elitism Order Crossover,75,5.5,4
+Elitism Cycle Crossover,75,2.05,0
+Order Crossover,76,3.9,0
+Cycle Crossover,76,2.35,8
+Elitism Order Crossover,76,5.6,8
+Elitism Cycle Crossover,76,2.6,0
+Order Crossover,77,3.05,6
+Cycle Crossover,77,1.95,8
+Elitism Order Crossover,77,5.65,12
+Elitism Cycle Crossover,77,2.1,0
+Order Crossover,78,3.2,0
+Cycle Crossover,78,2.45,0
+Elitism Order Crossover,78,4.9,6
+Elitism Cycle Crossover,78,2.5,2
+Order Crossover,79,3.9,8
+Cycle Crossover,79,1.85,0
+Elitism Order Crossover,79,5.35,6
+Elitism Cycle Crossover,79,2.95,0
+Order Crossover,80,4.0,2
+Cycle Crossover,80,2.2,0
+Elitism Order Crossover,80,6.3,6
+Elitism Cycle Crossover,80,2.25,0
+Order Crossover,81,3.9,2
+Cycle Crossover,81,2.15,0
+Elitism Order Crossover,81,5.4,0
+Elitism Cycle Crossover,81,2.1,0
+Order Crossover,82,3.9,2
+Cycle Crossover,82,2.95,0
+Elitism Order Crossover,82,4.45,8
+Elitism Cycle Crossover,82,3.05,4
+Order Crossover,83,3.6,0
+Cycle Crossover,83,1.5,0
+Elitism Order Crossover,83,4.45,0
+Elitism Cycle Crossover,83,2.65,0
+Order Crossover,84,4.8,6
+Cycle Crossover,84,1.85,0
+Elitism Order Crossover,84,3.85,0
+Elitism Cycle Crossover,84,2.7,4
+Order Crossover,85,3.35,0
+Cycle Crossover,85,1.85,0
+Elitism Order Crossover,85,3.8,10
+Elitism Cycle Crossover,85,1.95,4
+Order Crossover,86,4.5,2
+Cycle Crossover,86,2.15,0
+Elitism Order Crossover,86,5.05,6
+Elitism Cycle Crossover,86,2.25,4
+Order Crossover,87,4.35,6
+Cycle Crossover,87,1.6,6
+Elitism Order Crossover,87,4.8,6
+Elitism Cycle Crossover,87,3.0,2
+Order Crossover,88,3.15,0
+Cycle Crossover,88,2.95,2
+Elitism Order Crossover,88,4.4,6
+Elitism Cycle Crossover,88,2.3,2
+Order Crossover,89,3.2,6
+Cycle Crossover,89,2.15,2
+Elitism Order Crossover,89,4.6,6
+Elitism Cycle Crossover,89,1.6,4
+Order Crossover,90,4.1,6
+Cycle Crossover,90,1.25,0
+Elitism Order Crossover,90,5.8,4
+Elitism Cycle Crossover,90,1.35,0
+Order Crossover,91,4.15,2
+Cycle Crossover,91,1.9,4
+Elitism Order Crossover,91,4.0,0
+Elitism Cycle Crossover,91,1.95,2
+Order Crossover,92,3.15,4
+Cycle Crossover,92,2.45,0
+Elitism Order Crossover,92,4.1,0
+Elitism Cycle Crossover,92,2.0,6
+Order Crossover,93,3.2,4
+Cycle Crossover,93,1.95,0
+Elitism Order Crossover,93,4.2,6
+Elitism Cycle Crossover,93,2.25,2
+Order Crossover,94,2.95,0
+Cycle Crossover,94,2.0,4
+Elitism Order Crossover,94,4.45,8
+Elitism Cycle Crossover,94,2.7,0
+Order Crossover,95,4.15,8
+Cycle Crossover,95,2.55,0
+Elitism Order Crossover,95,5.25,6
+Elitism Cycle Crossover,95,1.9,0
+Order Crossover,96,3.4,4
+Cycle Crossover,96,2.75,8
+Elitism Order Crossover,96,4.45,2
+Elitism Cycle Crossover,96,2.0,0
+Order Crossover,97,3.3,0
+Cycle Crossover,97,2.45,0
+Elitism Order Crossover,97,5.35,2
+Elitism Cycle Crossover,97,2.2,4
+Order Crossover,98,4.25,0
+Cycle Crossover,98,2.7,2
+Elitism Order Crossover,98,6.1,8
+Elitism Cycle Crossover,98,2.4,0
+Order Crossover,99,3.25,0
+Cycle Crossover,99,2.05,0
+Elitism Order Crossover,99,4.65,6
+Elitism Cycle Crossover,99,2.5,0
+Order Crossover,100,3.95,2
+Cycle Crossover,100,2.15,2
+Elitism Order Crossover,100,4.15,0
+Elitism Cycle Crossover,100,1.45,0
+Order Crossover,101,2.95,4
+Cycle Crossover,101,2.35,0
+Elitism Order Crossover,101,5.05,6
+Elitism Cycle Crossover,101,2.7,0
+Order Crossover,102,3.65,6
+Cycle Crossover,102,1.1,2
+Elitism Order Crossover,102,4.95,10
+Elitism Cycle Crossover,102,2.55,0
+Order Crossover,103,3.75,4
+Cycle Crossover,103,2.2,0
+Elitism Order Crossover,103,5.0,6
+Elitism Cycle Crossover,103,2.3,0
+Order Crossover,104,4.7,6
+Cycle Crossover,104,2.2,6
+Elitism Order Crossover,104,4.7,6
+Elitism Cycle Crossover,104,2.15,0
+Order Crossover,105,3.95,4
+Cycle Crossover,105,2.35,4
+Elitism Order Crossover,105,5.4,8
+Elitism Cycle Crossover,105,2.1,0
+Order Crossover,106,3.35,2
+Cycle Crossover,106,2.05,4
+Elitism Order Crossover,106,4.1,10
+Elitism Cycle Crossover,106,2.75,6
+Order Crossover,107,4.1,2
+Cycle Crossover,107,3.2,0
+Elitism Order Crossover,107,5.35,4
+Elitism Cycle Crossover,107,1.95,6
+Order Crossover,108,3.8,6
+Cycle Crossover,108,1.7,0
+Elitism Order Crossover,108,5.8,2
+Elitism Cycle Crossover,108,2.55,4
+Order Crossover,109,3.85,6
+Cycle Crossover,109,0.9,0
+Elitism Order Crossover,109,5.8,8
+Elitism Cycle Crossover,109,2.25,0
+Order Crossover,110,3.65,2
+Cycle Crossover,110,2.35,2
+Elitism Order Crossover,110,4.8,0
+Elitism Cycle Crossover,110,1.5,0
+Order Crossover,111,3.0,4
+Cycle Crossover,111,1.4,0
+Elitism Order Crossover,111,5.05,0
+Elitism Cycle Crossover,111,3.0,0
+Order Crossover,112,3.75,4
+Cycle Crossover,112,1.35,2
+Elitism Order Crossover,112,3.7,8
+Elitism Cycle Crossover,112,2.0,4
+Order Crossover,113,3.5,8
+Cycle Crossover,113,1.55,0
+Elitism Order Crossover,113,5.1,0
+Elitism Cycle Crossover,113,2.95,2
+Order Crossover,114,3.35,4
+Cycle Crossover,114,2.75,0
+Elitism Order Crossover,114,4.8,0
+Elitism Cycle Crossover,114,2.2,2
+Order Crossover,115,2.95,0
+Cycle Crossover,115,1.65,0
+Elitism Order Crossover,115,5.3,6
+Elitism Cycle Crossover,115,2.95,4
+Order Crossover,116,2.8,0
+Cycle Crossover,116,2.4,0
+Elitism Order Crossover,116,5.35,10
+Elitism Cycle Crossover,116,2.2,4
+Order Crossover,117,3.85,6
+Cycle Crossover,117,2.55,0
+Elitism Order Crossover,117,5.0,8
+Elitism Cycle Crossover,117,1.8,0
+Order Crossover,118,3.7,0
+Cycle Crossover,118,2.0,0
+Elitism Order Crossover,118,4.75,0
+Elitism Cycle Crossover,118,2.15,6
+Order Crossover,119,4.05,6
+Cycle Crossover,119,0.9,0
+Elitism Order Crossover,119,4.75,4
+Elitism Cycle Crossover,119,2.75,8
+Order Crossover,120,3.2,4
+Cycle Crossover,120,2.3,0
+Elitism Order Crossover,120,4.15,4
+Elitism Cycle Crossover,120,1.85,4
+Order Crossover,121,4.15,6
+Cycle Crossover,121,2.35,0
+Elitism Order Crossover,121,4.95,4
+Elitism Cycle Crossover,121,2.8,0
+Order Crossover,122,3.65,2
+Cycle Crossover,122,1.85,0
+Elitism Order Crossover,122,4.95,0
+Elitism Cycle Crossover,122,2.0,0
+Order Crossover,123,4.1,8
+Cycle Crossover,123,2.6,6
+Elitism Order Crossover,123,4.95,0
+Elitism Cycle Crossover,123,2.75,6
+Order Crossover,124,2.85,4
+Cycle Crossover,124,2.2,0
+Elitism Order Crossover,124,4.25,2
+Elitism Cycle Crossover,124,1.5,4
+Order Crossover,125,3.85,4
+Cycle Crossover,125,1.65,6
+Elitism Order Crossover,125,4.85,4
+Elitism Cycle Crossover,125,1.7,0
+Order Crossover,126,4.4,4
+Cycle Crossover,126,1.6,0
+Elitism Order Crossover,126,4.7,0
+Elitism Cycle Crossover,126,1.65,0
+Order Crossover,127,3.95,2
+Cycle Crossover,127,2.3,4
+Elitism Order Crossover,127,4.05,0
+Elitism Cycle Crossover,127,2.2,6
+Order Crossover,128,2.95,0
+Cycle Crossover,128,2.35,2
+Elitism Order Crossover,128,5.15,0
+Elitism Cycle Crossover,128,1.4,0
+Order Crossover,129,4.85,4
+Cycle Crossover,129,2.15,0
+Elitism Order Crossover,129,5.0,2
+Elitism Cycle Crossover,129,1.95,0
+Order Crossover,130,3.6,4
+Cycle Crossover,130,2.35,0
+Elitism Order Crossover,130,4.4,8
+Elitism Cycle Crossover,130,1.9,2
+Order Crossover,131,3.8,8
+Cycle Crossover,131,3.0,6
+Elitism Order Crossover,131,4.75,6
+Elitism Cycle Crossover,131,1.95,2
+Order Crossover,132,3.3,0
+Cycle Crossover,132,2.35,0
+Elitism Order Crossover,132,4.75,6
+Elitism Cycle Crossover,132,2.5,0
+Order Crossover,133,3.9,4
+Cycle Crossover,133,2.05,6
+Elitism Order Crossover,133,4.0,4
+Elitism Cycle Crossover,133,1.35,4
+Order Crossover,134,3.7,4
+Cycle Crossover,134,1.75,8
+Elitism Order Crossover,134,5.2,6
+Elitism Cycle Crossover,134,1.4,4
+Order Crossover,135,3.65,6
+Cycle Crossover,135,2.3,0
+Elitism Order Crossover,135,4.35,6
+Elitism Cycle Crossover,135,1.8,0
+Order Crossover,136,3.8,4
+Cycle Crossover,136,2.3,2
+Elitism Order Crossover,136,4.45,6
+Elitism Cycle Crossover,136,1.5,0
+Order Crossover,137,2.9,0
+Cycle Crossover,137,2.0,0
+Elitism Order Crossover,137,4.35,4
+Elitism Cycle Crossover,137,1.6,2
+Order Crossover,138,3.45,8
+Cycle Crossover,138,2.35,6
+Elitism Order Crossover,138,5.55,6
+Elitism Cycle Crossover,138,2.2,8
+Order Crossover,139,3.3,8
+Cycle Crossover,139,2.75,0
+Elitism Order Crossover,139,5.6,8
+Elitism Cycle Crossover,139,3.35,6
+Order Crossover,140,3.6,8
+Cycle Crossover,140,1.95,0
+Elitism Order Crossover,140,5.85,8
+Elitism Cycle Crossover,140,2.3,4
+Order Crossover,141,3.65,2
+Cycle Crossover,141,2.0,0
+Elitism Order Crossover,141,5.6,0
+Elitism Cycle Crossover,141,2.2,6
+Order Crossover,142,4.0,6
+Cycle Crossover,142,2.3,0
+Elitism Order Crossover,142,5.0,8
+Elitism Cycle Crossover,142,2.0,0
+Order Crossover,143,3.55,0
+Cycle Crossover,143,1.4,0
+Elitism Order Crossover,143,6.2,0
+Elitism Cycle Crossover,143,2.0,0
+Order Crossover,144,3.9,6
+Cycle Crossover,144,1.45,4
+Elitism Order Crossover,144,3.95,8
+Elitism Cycle Crossover,144,2.15,0
+Order Crossover,145,3.55,0
+Cycle Crossover,145,1.75,0
+Elitism Order Crossover,145,4.5,10
+Elitism Cycle Crossover,145,2.9,4
+Order Crossover,146,3.3,6
+Cycle Crossover,146,2.9,0
+Elitism Order Crossover,146,5.0,0
+Elitism Cycle Crossover,146,2.9,0
+Order Crossover,147,3.1,6
+Cycle Crossover,147,2.65,6
+Elitism Order Crossover,147,4.95,0
+Elitism Cycle Crossover,147,2.65,4
+Order Crossover,148,3.55,0
+Cycle Crossover,148,2.3,0
+Elitism Order Crossover,148,4.4,4
+Elitism Cycle Crossover,148,2.35,0
+Order Crossover,149,3.15,6
+Cycle Crossover,149,2.45,4
+Elitism Order Crossover,149,5.0,2
+Elitism Cycle Crossover,149,1.75,0
+Order Crossover,150,3.65,6
+Cycle Crossover,150,1.65,0
+Elitism Order Crossover,150,4.8,6
+Elitism Cycle Crossover,150,2.2,10
+Order Crossover,151,3.25,2
+Cycle Crossover,151,2.05,4
+Elitism Order Crossover,151,5.15,0
+Elitism Cycle Crossover,151,2.3,0
+Order Crossover,152,4.25,10
+Cycle Crossover,152,2.4,0
+Elitism Order Crossover,152,5.1,6
+Elitism Cycle Crossover,152,1.9,0
+Order Crossover,153,3.5,0
+Cycle Crossover,153,2.3,0
+Elitism Order Crossover,153,4.25,8
+Elitism Cycle Crossover,153,2.2,2
+Order Crossover,154,2.9,4
+Cycle Crossover,154,1.55,6
+Elitism Order Crossover,154,4.55,4
+Elitism Cycle Crossover,154,1.95,4
+Order Crossover,155,3.35,0
+Cycle Crossover,155,2.25,2
+Elitism Order Crossover,155,5.15,6
+Elitism Cycle Crossover,155,1.65,0
+Order Crossover,156,3.0,8
+Cycle Crossover,156,1.65,4
+Elitism Order Crossover,156,4.2,4
+Elitism Cycle Crossover,156,2.2,4
+Order Crossover,157,3.7,6
+Cycle Crossover,157,1.55,2
+Elitism Order Crossover,157,4.6,6
+Elitism Cycle Crossover,157,1.7,0
+Order Crossover,158,3.65,0
+Cycle Crossover,158,2.2,6
+Elitism Order Crossover,158,4.7,4
+Elitism Cycle Crossover,158,2.7,6
+Order Crossover,159,3.75,6
+Cycle Crossover,159,1.25,0
+Elitism Order Crossover,159,4.7,4
+Elitism Cycle Crossover,159,1.1,0
+Order Crossover,160,4.55,8
+Cycle Crossover,160,2.1,0
+Elitism Order Crossover,160,5.35,2
+Elitism Cycle Crossover,160,2.5,6
+Order Crossover,161,3.4,6
+Cycle Crossover,161,1.8,0
+Elitism Order Crossover,161,4.75,0
+Elitism Cycle Crossover,161,2.2,6
+Order Crossover,162,3.95,6
+Cycle Crossover,162,1.55,0
+Elitism Order Crossover,162,4.9,0
+Elitism Cycle Crossover,162,2.8,0
+Order Crossover,163,4.45,4
+Cycle Crossover,163,1.85,2
+Elitism Order Crossover,163,3.55,0
+Elitism Cycle Crossover,163,2.45,4
+Order Crossover,164,4.65,6
+Cycle Crossover,164,2.5,8
+Elitism Order Crossover,164,6.15,6
+Elitism Cycle Crossover,164,3.4,4
+Order Crossover,165,3.8,8
+Cycle Crossover,165,2.1,0
+Elitism Order Crossover,165,4.35,6
+Elitism Cycle Crossover,165,2.9,0
+Order Crossover,166,3.8,8
+Cycle Crossover,166,2.1,0
+Elitism Order Crossover,166,5.2,6
+Elitism Cycle Crossover,166,2.3,2
+Order Crossover,167,3.8,0
+Cycle Crossover,167,2.2,8
+Elitism Order Crossover,167,4.95,6
+Elitism Cycle Crossover,167,2.4,10
+Order Crossover,168,3.6,4
+Cycle Crossover,168,2.8,0
+Elitism Order Crossover,168,5.0,6
+Elitism Cycle Crossover,168,2.65,4
+Order Crossover,169,3.2,6
+Cycle Crossover,169,1.75,2
+Elitism Order Crossover,169,4.6,4
+Elitism Cycle Crossover,169,1.8,0
+Order Crossover,170,3.4,6
+Cycle Crossover,170,1.7,0
+Elitism Order Crossover,170,3.9,8
+Elitism Cycle Crossover,170,1.65,0
+Order Crossover,171,3.45,10
+Cycle Crossover,171,2.55,0
+Elitism Order Crossover,171,4.75,6
+Elitism Cycle Crossover,171,2.3,6
+Order Crossover,172,3.6,6
+Cycle Crossover,172,2.15,8
+Elitism Order Crossover,172,4.7,6
+Elitism Cycle Crossover,172,1.0,0
+Order Crossover,173,3.9,0
+Cycle Crossover,173,2.75,8
+Elitism Order Crossover,173,4.4,6
+Elitism Cycle Crossover,173,2.25,2
+Order Crossover,174,2.3,0
+Cycle Crossover,174,2.1,6
+Elitism Order Crossover,174,5.2,8
+Elitism Cycle Crossover,174,2.4,6
+Order Crossover,175,2.75,0
+Cycle Crossover,175,2.3,4
+Elitism Order Crossover,175,4.75,8
+Elitism Cycle Crossover,175,2.9,8
+Order Crossover,176,3.75,4
+Cycle Crossover,176,2.2,8
+Elitism Order Crossover,176,4.7,0
+Elitism Cycle Crossover,176,2.3,4
+Order Crossover,177,3.35,4
+Cycle Crossover,177,2.4,2
+Elitism Order Crossover,177,4.9,6
+Elitism Cycle Crossover,177,2.4,0
+Order Crossover,178,3.3,8
+Cycle Crossover,178,2.85,0
+Elitism Order Crossover,178,5.65,8
+Elitism Cycle Crossover,178,1.95,0
+Order Crossover,179,4.55,6
+Cycle Crossover,179,2.25,4
+Elitism Order Crossover,179,3.85,4
+Elitism Cycle Crossover,179,2.2,0
+Order Crossover,180,3.95,2
+Cycle Crossover,180,2.7,0
+Elitism Order Crossover,180,5.0,8
+Elitism Cycle Crossover,180,1.35,0
+Order Crossover,181,3.2,4
+Cycle Crossover,181,1.4,0
+Elitism Order Crossover,181,5.65,8
+Elitism Cycle Crossover,181,2.65,0
+Order Crossover,182,3.2,6
+Cycle Crossover,182,1.65,8
+Elitism Order Crossover,182,4.85,6
+Elitism Cycle Crossover,182,2.45,0
+Order Crossover,183,4.7,4
+Cycle Crossover,183,2.0,0
+Elitism Order Crossover,183,4.85,6
+Elitism Cycle Crossover,183,2.1,0
+Order Crossover,184,3.6,6
+Cycle Crossover,184,1.85,4
+Elitism Order Crossover,184,5.4,4
+Elitism Cycle Crossover,184,3.05,8
+Order Crossover,185,2.55,6
+Cycle Crossover,185,3.1,0
+Elitism Order Crossover,185,4.75,2
+Elitism Cycle Crossover,185,2.8,0
+Order Crossover,186,3.6,6
+Cycle Crossover,186,2.4,0
+Elitism Order Crossover,186,4.4,6
+Elitism Cycle Crossover,186,1.95,6
+Order Crossover,187,4.65,0
+Cycle Crossover,187,2.75,0
+Elitism Order Crossover,187,4.7,2
+Elitism Cycle Crossover,187,2.4,2
+Order Crossover,188,3.95,6
+Cycle Crossover,188,1.5,0
+Elitism Order Crossover,188,3.8,0
+Elitism Cycle Crossover,188,2.2,2
+Order Crossover,189,3.0,0
+Cycle Crossover,189,2.75,8
+Elitism Order Crossover,189,5.25,6
+Elitism Cycle Crossover,189,1.9,0
+Order Crossover,190,3.9,6
+Cycle Crossover,190,2.3,0
+Elitism Order Crossover,190,5.1,6
+Elitism Cycle Crossover,190,1.85,8
+Order Crossover,191,3.05,4
+Cycle Crossover,191,1.85,8
+Elitism Order Crossover,191,6.3,6
+Elitism Cycle Crossover,191,1.55,2
+Order Crossover,192,2.75,2
+Cycle Crossover,192,2.7,0
+Elitism Order Crossover,192,6.45,6
+Elitism Cycle Crossover,192,3.3,2
+Order Crossover,193,3.0,0
+Cycle Crossover,193,2.65,2
+Elitism Order Crossover,193,5.3,4
+Elitism Cycle Crossover,193,2.1,0
+Order Crossover,194,2.85,8
+Cycle Crossover,194,1.25,0
+Elitism Order Crossover,194,4.8,4
+Elitism Cycle Crossover,194,2.25,2
+Order Crossover,195,3.5,6
+Cycle Crossover,195,2.3,8
+Elitism Order Crossover,195,4.5,4
+Elitism Cycle Crossover,195,2.15,0
+Order Crossover,196,3.85,2
+Cycle Crossover,196,2.05,0
+Elitism Order Crossover,196,5.1,6
+Elitism Cycle Crossover,196,2.0,0
+Order Crossover,197,2.95,0
+Cycle Crossover,197,1.5,0
+Elitism Order Crossover,197,4.4,4
+Elitism Cycle Crossover,197,2.7,10
+Order Crossover,198,3.25,0
+Cycle Crossover,198,2.8,0
+Elitism Order Crossover,198,4.95,4
+Elitism Cycle Crossover,198,1.55,4
+Order Crossover,199,3.35,2
+Cycle Crossover,199,1.9,2
+Elitism Order Crossover,199,5.1,6
+Elitism Cycle Crossover,199,1.8,0
+Order Crossover,200,3.55,2
+Cycle Crossover,200,1.65,0
+Elitism Order Crossover,200,5.0,4
+Elitism Cycle Crossover,200,2.95,0
