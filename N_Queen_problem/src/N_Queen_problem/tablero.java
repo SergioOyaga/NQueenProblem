@@ -19,7 +19,7 @@ public class tablero extends javax.swing.JFrame {
     public tablero() {
         this.jpro = new javax.swing.JButton [Population.n][Population.n];
         initComponents();
-        
+               
         for(int i=0;i<Population.n;i++){
             for(int j=0;j<Population.n;j++){
             if((i+j)%2==0){
@@ -114,12 +114,10 @@ public class tablero extends javax.swing.JFrame {
         j.setIcon(icon);
         this.setVisible(true);
     }
-    public  void setBackGround(int i,int j, int k,int l,int m){
-        JButton boton=getJ(i,j);
-        boton.setBackground(new java.awt.Color(k, l, m));
-    }
+
     
     // Variables declaration
+    
     private javax.swing.JLabel jLabel28;
     public javax.swing.JPanel jPanel1;
     public javax.swing.JPanel jPanel6;
@@ -128,5 +126,6 @@ public class tablero extends javax.swing.JFrame {
     public JButton getJ(int i, int j) {
         return jpro[i][j];    
     }
+    
     
 }

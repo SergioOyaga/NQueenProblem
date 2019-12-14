@@ -1,5 +1,6 @@
 package N_Queen_problem;
 
+import java.awt.Color;
 import java.util.Arrays;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -142,6 +143,8 @@ public class N_Queen_problem {
         System.out.println("Mutation probabilities = ("+pnew.Pmut1+","+pnew.Pmut2+")");
         System.out.println("Population fitness"+pnew);
         tablero torder= new tablero();
+        if (pnew.Population[0].fitness==0){torder.setTitle("Order");}
+        else{torder.setTitle("Order didn't find an optimal solution.");}
         controlador conorder= new controlador(torder,pnew.Population[0].getGenome());
         for(Population.Candidate c:pnew.Population){
             if(c.fitness==0){
@@ -155,6 +158,9 @@ public class N_Queen_problem {
         System.out.println("Mutation probabilities = ("+pnew1.Pmut1+","+pnew1.Pmut2+")");
         System.out.println("Population fitness"+pnew1);
         tablero tcycle= new tablero();
+        if (pnew.Population[0].fitness==0){tcycle.setTitle("Cycle");}
+        else{tcycle.setTitle("Cycle didn't find an optimal solution.");}
+        
         controlador concyce= new controlador(tcycle,pnew1.Population[0].getGenome());
         for(Population.Candidate c:pnew1.Population){
             if(c.fitness==0){
@@ -168,6 +174,9 @@ public class N_Queen_problem {
         System.out.println("Mutation probabilities = ("+pnew2.Pmut1+","+pnew2.Pmut2+")");
         System.out.println("Population fitness"+pnew2);
         tablero torderelit= new tablero();
+        if (pnew.Population[0].fitness==0){torderelit.setTitle("Elite Order");}
+        else{torderelit.setTitle("Elite order didn't find an optimal solution.");}
+        
         controlador conorderelit= new controlador(torderelit,pnew2.Population[0].getGenome());
         for(Population.Candidate c:pnew2.Population){
             if(c.fitness==0){
@@ -181,6 +190,9 @@ public class N_Queen_problem {
         System.out.println("Mutation probabilities = ("+pnew3.Pmut1+","+pnew3.Pmut2+")");
         System.out.println("Population fitness"+pnew3);
         tablero tcycleelit= new tablero();
+        if (pnew.Population[0].fitness==0){tcycleelit.setTitle("Elite Cycle");}
+        else{tcycleelit.setTitle("Elite cycle didn't find an optimal solution.");}
+        
         controlador concyceelit= new controlador(tcycleelit,pnew3.Population[0].getGenome());
         for(Population.Candidate c:pnew3.Population){
             if(c.fitness==0){

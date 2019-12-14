@@ -1,81 +1,401 @@
 Type of crossover,name,fitness 
-Order Crossover,3;2;6;5;4;0;1;7;,10
-Order Crossover,3;2;6;5;4;0;1;7;,10
-Order Crossover,3;2;6;5;0;4;1;7;,4
-Order Crossover,3;2;6;5;4;1;7;0;,8
-Order Crossover,3;2;6;5;4;1;7;0;,8
-Order Crossover,3;2;6;5;4;1;7;0;,8
-Order Crossover,3;2;6;5;4;0;1;7;,10
-Order Crossover,3;2;6;5;0;4;1;7;,4
-Order Crossover,3;2;6;5;4;0;1;7;,10
-Order Crossover,3;2;6;5;4;0;1;7;,10
-Order Crossover,3;2;6;5;0;4;1;7;,4
-Order Crossover,3;2;6;5;0;4;1;7;,4
-Order Crossover,3;2;6;5;0;4;1;7;,4
-Order Crossover,3;2;6;5;0;4;1;7;,4
-Order Crossover,3;2;6;5;4;1;0;7;,10
-Order Crossover,3;2;6;5;4;1;0;7;,10
-Order Crossover,3;2;6;5;0;4;1;7;,4
-Order Crossover,3;2;6;5;0;4;1;7;,4
-Order Crossover,3;2;6;5;0;4;1;7;,4
-Order Crossover,3;2;6;5;0;4;1;7;,4
-Cycle Crossover,5;0;3;4;7;1;6;2;,4
-Cycle Crossover,5;0;3;4;7;1;6;2;,4
-Cycle Crossover,5;0;3;4;7;1;6;2;,4
-Cycle Crossover,5;0;3;4;7;1;6;2;,4
-Cycle Crossover,5;0;3;4;7;1;6;2;,4
-Cycle Crossover,5;0;3;4;7;1;6;2;,4
-Cycle Crossover,5;0;3;4;7;1;6;2;,4
-Cycle Crossover,5;0;3;4;7;1;6;2;,4
-Cycle Crossover,5;0;3;4;7;1;6;2;,4
-Cycle Crossover,5;0;3;4;7;1;6;2;,4
-Cycle Crossover,5;0;3;4;7;1;6;2;,4
-Cycle Crossover,5;0;3;4;7;1;6;2;,4
-Cycle Crossover,5;0;3;4;7;1;6;2;,4
-Cycle Crossover,5;0;3;4;7;1;6;2;,4
-Cycle Crossover,5;0;3;4;7;1;6;2;,4
-Cycle Crossover,5;0;3;4;7;1;6;2;,4
-Cycle Crossover,5;0;3;4;7;1;6;2;,4
-Cycle Crossover,5;0;3;4;7;1;6;2;,4
-Cycle Crossover,5;0;3;4;7;1;6;2;,4
-Cycle Crossover,5;0;3;4;7;1;6;2;,4
-Elitism Order Crossover,3;5;6;2;1;7;4;0;,4
-Elitism Order Crossover,3;5;6;2;1;7;4;0;,4
-Elitism Order Crossover,3;5;6;2;0;7;1;4;,2
-Elitism Order Crossover,3;5;6;2;0;7;1;4;,2
-Elitism Order Crossover,3;5;6;2;4;7;1;0;,6
-Elitism Order Crossover,3;5;6;2;7;1;4;0;,6
-Elitism Order Crossover,3;5;6;2;0;7;1;4;,2
-Elitism Order Crossover,3;5;6;2;0;7;1;4;,2
-Elitism Order Crossover,3;5;6;2;0;7;1;4;,2
-Elitism Order Crossover,3;5;6;2;0;7;1;4;,2
-Elitism Order Crossover,3;5;6;2;7;1;4;0;,6
-Elitism Order Crossover,3;5;6;2;7;1;4;0;,6
-Elitism Order Crossover,3;5;6;2;0;7;1;4;,2
-Elitism Order Crossover,3;5;6;2;0;7;1;4;,2
-Elitism Order Crossover,3;5;6;2;0;7;1;4;,2
-Elitism Order Crossover,3;5;6;2;0;7;1;4;,2
-Elitism Order Crossover,3;5;6;2;0;7;1;4;,2
-Elitism Order Crossover,3;5;6;2;0;7;1;4;,2
-Elitism Order Crossover,3;5;6;2;0;7;1;4;,2
-Elitism Order Crossover,3;5;6;2;0;7;1;4;,2
-Elitism Cycle Crossover,6;2;7;1;4;0;5;3;,0
-Elitism Cycle Crossover,6;2;7;1;4;0;5;3;,0
-Elitism Cycle Crossover,6;2;7;1;4;0;5;3;,0
-Elitism Cycle Crossover,6;2;7;1;4;0;5;3;,0
-Elitism Cycle Crossover,6;2;7;1;4;0;5;3;,0
-Elitism Cycle Crossover,6;2;7;1;4;0;5;3;,0
-Elitism Cycle Crossover,6;2;7;1;4;0;5;3;,0
-Elitism Cycle Crossover,6;2;7;1;4;0;5;3;,0
-Elitism Cycle Crossover,6;2;7;1;4;0;5;3;,0
-Elitism Cycle Crossover,6;2;7;1;4;0;5;3;,0
-Elitism Cycle Crossover,6;2;7;1;4;0;5;3;,0
-Elitism Cycle Crossover,6;2;7;1;4;0;5;3;,0
-Elitism Cycle Crossover,6;2;7;1;4;0;5;3;,0
-Elitism Cycle Crossover,6;2;7;1;4;0;5;3;,0
-Elitism Cycle Crossover,6;2;7;1;4;0;5;3;,0
-Elitism Cycle Crossover,6;2;7;1;4;0;5;3;,0
-Elitism Cycle Crossover,6;2;7;1;4;0;5;3;,0
-Elitism Cycle Crossover,6;2;7;1;4;0;5;3;,0
-Elitism Cycle Crossover,6;2;7;1;4;0;5;3;,0
-Elitism Cycle Crossover,6;2;7;1;4;0;5;3;,0
+Order Crossover,5;2;4;7;3;1;0;6;,6
+Order Crossover,5;2;4;7;3;1;0;6;,6
+Order Crossover,5;2;7;4;1;3;0;6;,6
+Order Crossover,5;2;4;7;0;6;1;3;,6
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;7;3;0;1;6;,8
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;0;7;3;1;6;,2
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;7;2;4;0;3;1;6;,6
+Order Crossover,5;0;4;7;2;3;1;6;,6
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;7;3;1;6;0;,4
+Order Crossover,4;2;5;7;3;1;6;0;,6
+Order Crossover,5;2;4;7;3;1;0;6;,6
+Order Crossover,4;2;5;7;3;1;0;6;,8
+Order Crossover,5;2;4;7;3;1;0;6;,6
+Order Crossover,5;7;4;2;0;1;3;6;,8
+Order Crossover,7;2;4;5;6;3;1;0;,10
+Order Crossover,5;2;4;7;6;3;1;0;,6
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;7;4;2;0;3;1;6;,6
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;6;0;3;1;7;,0
+Order Crossover,2;5;4;7;0;3;1;6;,6
+Order Crossover,0;2;4;7;5;3;1;6;,2
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;7;3;1;6;0;,4
+Order Crossover,5;2;4;6;3;1;7;0;,6
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,4;2;5;7;0;3;1;6;,6
+Order Crossover,5;2;7;6;0;4;3;1;,8
+Order Crossover,5;4;2;0;7;6;3;1;,8
+Order Crossover,5;2;4;0;7;3;1;6;,2
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,0;2;4;7;5;3;1;6;,2
+Order Crossover,5;4;2;7;0;3;1;6;,4
+Order Crossover,5;2;4;6;0;3;1;7;,0
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;6;0;3;1;7;,0
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;0;7;3;1;6;,2
+Order Crossover,5;1;0;7;4;3;2;6;,10
+Order Crossover,5;7;4;2;0;1;3;6;,8
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;3;0;7;1;6;,4
+Order Crossover,5;1;4;7;0;3;2;6;,4
+Order Crossover,5;2;4;6;0;3;1;7;,0
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;7;3;1;6;0;,4
+Order Crossover,5;2;4;7;3;1;6;0;,4
+Order Crossover,5;2;4;7;3;1;6;0;,4
+Order Crossover,5;2;4;7;3;1;6;0;,4
+Order Crossover,5;2;4;7;1;3;0;6;,4
+Order Crossover,7;2;4;5;3;1;6;0;,8
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;0;7;4;3;1;6;,4
+Order Crossover,5;2;4;3;0;7;1;6;,4
+Order Crossover,5;6;4;7;0;3;1;2;,6
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;6;0;3;1;7;,0
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;7;0;6;1;3;,6
+Order Crossover,5;2;4;7;3;6;1;0;,6
+Order Crossover,5;2;4;7;3;1;6;0;,4
+Order Crossover,0;6;4;7;3;1;2;5;,6
+Order Crossover,5;2;4;6;0;3;1;7;,0
+Order Crossover,6;2;4;7;0;3;1;5;,4
+Order Crossover,7;2;4;5;0;1;3;6;,6
+Order Crossover,5;2;4;6;3;0;1;7;,6
+Order Crossover,5;2;4;1;0;3;7;6;,8
+Order Crossover,5;2;4;0;7;3;1;6;,2
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;3;0;6;7;1;,6
+Order Crossover,5;2;3;7;0;4;6;1;,4
+Order Crossover,5;2;4;7;3;0;1;6;,8
+Order Crossover,7;2;4;5;3;0;1;6;,10
+Order Crossover,2;5;4;7;3;1;6;0;,10
+Order Crossover,4;2;5;7;3;1;6;0;,6
+Order Crossover,5;2;4;7;0;6;1;3;,6
+Order Crossover,5;2;1;7;0;3;4;6;,8
+Order Crossover,0;2;4;7;5;3;1;6;,2
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;7;0;3;1;6;,0
+Order Crossover,5;2;4;7;1;3;0;6;,4
+Order Crossover,5;2;4;6;0;3;1;7;,0
+Order Crossover,2;5;4;7;0;3;1;6;,6
+Order Crossover,5;0;4;2;3;1;6;7;,10
+Order Crossover,5;2;4;7;3;1;6;0;,4
+Order Crossover,7;2;4;5;3;1;0;6;,10
+Order Crossover,5;2;4;6;3;1;0;7;,4
+Order Crossover,5;2;4;7;3;1;6;0;,4
+Order Crossover,5;2;4;7;3;1;6;0;,4
+Cycle Crossover,6;7;0;4;3;1;5;2;,8
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,6;7;0;4;3;1;5;2;,8
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;2;5;,6
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,1;7;0;4;6;3;5;2;,6
+Cycle Crossover,0;7;3;4;6;1;5;2;,2
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,2;7;0;4;6;1;5;3;,8
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,2;7;0;4;6;1;5;3;,8
+Cycle Crossover,2;7;0;4;6;1;5;3;,8
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;5;4;6;1;0;2;,6
+Cycle Crossover,3;7;5;4;6;1;0;2;,6
+Cycle Crossover,3;7;0;1;5;4;6;2;,6
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;5;1;6;2;,4
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;6;0;4;7;1;5;2;,6
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;4;0;6;1;5;2;,6
+Cycle Crossover,3;7;2;4;6;1;5;0;,2
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,2;7;0;4;6;1;5;3;,8
+Cycle Crossover,3;7;4;0;6;1;5;2;,6
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;5;1;2;,6
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;2;4;6;1;5;0;,2
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;2;1;5;6;,6
+Cycle Crossover,3;1;0;4;6;7;5;2;,4
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;2;5;1;,4
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;1;6;5;2;,4
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;5;1;6;2;,4
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;2;0;4;6;1;5;7;,4
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;2;0;4;6;1;5;7;,4
+Cycle Crossover,3;7;0;5;6;1;4;2;,8
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;2;6;1;5;4;,4
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;6;0;4;7;1;5;2;,6
+Cycle Crossover,3;7;0;5;6;1;4;2;,8
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;2;5;1;,4
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;5;0;4;6;1;7;2;,4
+Cycle Crossover,3;7;2;4;6;1;5;0;,2
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;6;4;0;1;5;2;,4
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;1;0;4;6;7;5;2;,4
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,0;7;3;4;6;1;5;2;,2
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Cycle Crossover,3;7;0;4;6;1;5;2;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,6;4;1;7;5;3;2;0;,2
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;0;1;7;5;3;6;4;,2
+Elitism Order Crossover,2;4;1;3;5;7;6;0;,6
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;0;6;3;,4
+Elitism Order Crossover,2;3;1;7;5;4;6;0;,6
+Elitism Order Crossover,5;1;0;7;2;3;6;4;,8
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;5;7;3;6;0;,6
+Elitism Order Crossover,0;2;1;7;5;3;6;4;,6
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;0;5;3;6;7;,4
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;0;1;7;5;3;6;4;,2
+Elitism Order Crossover,0;4;1;7;5;3;6;2;,4
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;6;5;3;7;0;,6
+Elitism Order Crossover,2;4;6;7;5;3;1;0;,6
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;3;1;7;5;4;6;0;,6
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,1;4;2;7;5;3;6;0;,4
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;0;5;3;6;7;,4
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;6;7;5;3;1;0;,6
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;5;7;3;6;0;,6
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;0;3;5;6;7;,8
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;0;7;5;3;6;1;,6
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;7;1;5;3;6;0;,4
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,6;4;1;7;5;3;2;0;,2
+Elitism Order Crossover,5;4;1;7;2;3;6;0;,4
+Elitism Order Crossover,2;4;1;5;7;3;6;0;,6
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,4;2;0;7;5;3;6;1;,8
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;6;5;3;7;0;,6
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,6;4;1;7;5;3;2;0;,2
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,1;4;6;7;5;3;2;0;,8
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;5;1;7;4;3;6;0;,6
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,4;2;1;7;5;3;6;0;,6
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;6;3;0;,4
+Elitism Order Crossover,3;4;0;7;5;2;6;1;,2
+Elitism Order Crossover,6;4;1;7;5;3;2;0;,2
+Elitism Order Crossover,2;4;1;7;5;0;6;3;,4
+Elitism Order Crossover,3;4;1;7;5;2;6;0;,6
+Elitism Order Crossover,2;7;1;4;5;3;6;0;,6
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,1;4;2;7;5;3;6;0;,4
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;7;1;4;5;3;6;0;,6
+Elitism Order Crossover,2;3;1;7;5;4;6;0;,6
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;6;3;0;,4
+Elitism Order Crossover,4;2;1;7;5;3;6;0;,6
+Elitism Order Crossover,2;4;7;1;5;3;6;0;,4
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;6;5;3;0;7;,4
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Order Crossover,2;4;1;7;5;3;6;0;,0
+Elitism Cycle Crossover,4;7;3;5;6;1;0;2;,6
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,7;4;3;0;6;1;5;2;,2
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;5;3;0;6;1;7;2;,6
+Elitism Cycle Crossover,4;1;3;0;6;7;5;2;,2
+Elitism Cycle Crossover,4;0;3;7;6;1;5;2;,6
+Elitism Cycle Crossover,4;1;3;0;6;7;5;2;,2
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;0;3;6;1;5;2;,2
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;6;3;0;7;1;5;2;,2
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;2;3;0;6;1;5;7;,4
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;2;0;6;1;5;3;,6
+Elitism Cycle Crossover,5;7;3;0;6;1;4;2;,4
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;2;5;,4
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;0;3;7;6;1;5;2;,6
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;5;1;2;,4
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;3;7;0;6;1;5;2;,6
+Elitism Cycle Crossover,4;7;3;5;6;1;0;2;,6
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;5;3;0;6;1;7;2;,6
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;5;1;6;2;,4
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;1;3;0;6;7;5;2;,2
+Elitism Cycle Crossover,4;7;6;0;3;1;5;2;,6
+Elitism Cycle Crossover,4;7;6;0;3;1;5;2;,6
+Elitism Cycle Crossover,3;7;4;0;6;1;5;2;,6
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;3;7;0;6;1;5;2;,6
+Elitism Cycle Crossover,0;1;3;4;6;7;5;2;,6
+Elitism Cycle Crossover,4;0;3;7;6;1;5;2;,6
+Elitism Cycle Crossover,7;4;3;0;6;1;5;2;,2
+Elitism Cycle Crossover,4;7;3;0;5;1;6;2;,4
+Elitism Cycle Crossover,4;7;3;2;6;1;5;0;,4
+Elitism Cycle Crossover,1;7;3;2;6;4;5;0;,8
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;2;5;,4
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,1;7;3;0;6;4;5;2;,6
+Elitism Cycle Crossover,4;7;3;1;6;0;5;2;,6
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,7;3;4;0;6;1;5;2;,6
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;6;5;3;1;0;2;,8
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,6;7;3;4;0;1;5;2;,8
+Elitism Cycle Crossover,4;7;3;0;5;1;6;2;,4
+Elitism Cycle Crossover,4;5;3;0;6;1;7;2;,6
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,5;7;3;0;6;1;4;2;,4
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,5;7;3;0;6;1;4;2;,4
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,2;7;3;0;6;1;5;4;,6
+Elitism Cycle Crossover,4;1;2;0;6;7;5;3;,8
+Elitism Cycle Crossover,4;6;3;0;7;1;5;2;,2
+Elitism Cycle Crossover,4;7;3;0;1;6;5;2;,8
+Elitism Cycle Crossover,4;7;0;3;6;1;5;2;,2
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;5;6;1;0;2;,6
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;3;7;0;6;1;5;2;,6
+Elitism Cycle Crossover,4;3;7;0;6;1;5;2;,6
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
+Elitism Cycle Crossover,4;7;3;0;6;1;5;2;,0
