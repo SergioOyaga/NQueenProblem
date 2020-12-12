@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="N_Queen_problem">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/N_Queen_problem/dist/N_Queen_problem.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
