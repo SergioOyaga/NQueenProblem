@@ -1,6 +1,5 @@
 package N_Queen_problem;
 
-import java.awt.Color;
 import java.util.Arrays;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -10,10 +9,9 @@ import java.io.IOException;
  * @author Sergio Oyaga
  */
 public class N_Queen_problem {
-     public int cicles, queens, popul;
-     public double Pm1o, Pm2o,Pm1c,Pm2c,Pm1eo,Pm2eo,Pm1ec,Pm2ec;
-     public static void main(String args[]) throws IOException {
-         //try for the look and feel.
+
+     public static void main(String args[]) {
+        //try for the look and feel.
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -22,131 +20,131 @@ public class N_Queen_problem {
                 }
             }
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(tablero.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Board.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-               Setting seting= new Setting();
-               seting.setVisible(true);
+               Setting setting= new Setting();
+               setting.setVisible(true);
                 
             }
         });
 
      }
-     public static void runGenetic(int cicles,double P1o, double P2o, double P1c, double P2c,double P1eo, double P2eo,
+     public static void runGenetic(int cycles,double P1o, double P2o, double P1c, double P2c,double P1eo, double P2eo,
              double P1ec, double P2ec) throws IOException{
          
         //Creating two files for Write a csv to be able to make fancy plots in R
-        FileWriter fw = new FileWriter("./archivo.csv");
+        FileWriter fw = new FileWriter("./file.csv");
         fw.append("Type of crossover,Generation,Mean,Best \n");
-        FileWriter fw2 = new FileWriter("./archivo1.csv");
+        FileWriter fw2 = new FileWriter("./file1.csv");
         fw2.append("Type of crossover,name,fitness \n");
         
         //Initialising the objects
-        Population p=new Population(); //first population
-        p.initPopulation();
-        System.out.println("Cicles until stop = "+ cicles);
+        Population population=new Population(); //first population
+        population.initPopulation();
+        System.out.println("Cycles until stop = "+ cycles + "\n");
         
-        Population pant,pnew=p, pnew1=p,pnew2=p,pnew3=p; //two more populations without initialise
+        Population previousPopulation = population, populationOrder=population, populationCycle=population,populationOrderElitism=population,
+                populationCycleElitism=population; //Initialize new populations for each optimization type
         
-        String [] list=new String [cicles],//some strings to store the csv information
-                 write=new String [cicles+1],
+        String [] listPreviousSolutions=new String [cycles],    // array of previous solutions.
+                write=new String [cycles+1],                    // Array of string to store the output
                  write2={"","","",""};
-        for(int i=0;i<write.length;i++){
+        for(int i=0;i<write.length;i++){                        //Fill with ""
             write[i]="";
         }
         
-        /*Central cycle where the evolution takes place. */
-        for(int i=0;i<cicles;i++){
+        /*Principal cycle where the evolution takes place. */
+        for(int i=0;i<cycles;i++){
             //order method
-            pnew.Pmut1=P1o;//mutation probabilities
-            pnew.Pmut2=P2o;
-            if(i==0){//write the type of cross, the generationn number, the mean and the best individual
-              write[i]="Order Crossover,"+Integer.toString(i)+","+Double.toString(pnew.mean())+","+pnew.Population[0].fitness+"\n";  
+            populationOrder.Pmut1=P1o;//mutation probabilities
+            populationOrder.Pmut2=P2o;
+            if(i==0){//write the type of cross, the generation number, the mean and the best individual
+              write[i]="Order Crossover,"+Integer.toString(i)+","+Double.toString(populationOrder.mean())+","+populationOrder.Population[0].fitness+"\n";
             }
-            pnew=pnew.nextGenerationTournament(true,false);//obtains the next generation (order,no elitism)
-            write[i+1]="Order Crossover,"+Integer.toString(i+1)+","+Double.toString(pnew.mean())+","+pnew.Population[0].fitness+"\n";
+            populationOrder=populationOrder.nextGenerationTournament(true,false);//obtains the next generation (order,no elitism)
+            write[i+1]="Order Crossover,"+Integer.toString(i+1)+","+Double.toString(populationOrder.mean())+","+populationOrder.Population[0].fitness+"\n";
             
             //cycle method
-            pnew1.Pmut1=P1c;//mutation probabilities
-            pnew1.Pmut2=P2c;
-            if(i==0){//write the type of cross, the generationn number, the mean and the best individual
-              write[i]+="Cycle Crossover,"+Integer.toString(i)+","+Double.toString(pnew1.mean())+","+pnew1.Population[0].fitness+"\n";  
+            populationCycle.Pmut1=P1c;//mutation probabilities
+            populationCycle.Pmut2=P2c;
+            if(i==0){//write the type of cross, the generation number, the mean and the best individual
+              write[i]+="Cycle Crossover,"+Integer.toString(i)+","+Double.toString(populationCycle.mean())+","+populationCycle.Population[0].fitness+"\n";
             }
-            pnew1=pnew1.nextGenerationTournament(false,false);//obtains the next generation (cycle,no elitism)
-            write[i+1]+="Cycle Crossover,"+Integer.toString(i+1)+","+Double.toString(pnew1.mean())+","+pnew1.Population[0].fitness+"\n";
+            populationCycle=populationCycle.nextGenerationTournament(false,false);//obtains the next generation (cycle,no elitism)
+            write[i+1]+="Cycle Crossover,"+Integer.toString(i+1)+","+Double.toString(populationCycle.mean())+","+populationCycle.Population[0].fitness+"\n";
             
             //elitism order method
-            pnew2.Pmut1=P1eo;//mutation probabilities
-            pnew2.Pmut2=P2eo;
-            if(i==0){//write the type of cross, the generationn number, the mean and the best individual
-              write[i]+="Elitism Order Crossover,"+Integer.toString(i)+","+Double.toString(pnew2.mean())+","+pnew2.Population[0].fitness+"\n";  
+            populationOrderElitism.Pmut1=P1eo;//mutation probabilities
+            populationOrderElitism.Pmut2=P2eo;
+            if(i==0){//write the type of cross, the generation number, the mean and the best individual
+              write[i]+="Elitism Order Crossover,"+Integer.toString(i)+","+Double.toString(populationOrderElitism.mean())+","+populationOrderElitism.Population[0].fitness+"\n";
             }
-            pnew2=pnew2.nextGenerationTournament(true,true);//obtains the next generation (order,elitism)
-            write[i+1]+="Elitism Order Crossover,"+Integer.toString(i+1)+","+Double.toString(pnew2.mean())+","+pnew2.Population[0].fitness+"\n";
+            populationOrderElitism=populationOrderElitism.nextGenerationTournament(true,true);//obtains the next generation (order,elitism)
+            write[i+1]+="Elitism Order Crossover,"+Integer.toString(i+1)+","+Double.toString(populationOrderElitism.mean())+","+populationOrderElitism.Population[0].fitness+"\n";
         
             //elitism cycle method
-            pnew3.Pmut1=P1ec;//mutation probabilities
-            pnew3.Pmut2=P2ec;
-            if(i==0){//write the type of cross, the generationn number, the mean and the best individual
-              write[i]+="Elitism Cycle Crossover,"+Integer.toString(i)+","+Double.toString(pnew3.mean())+","+pnew3.Population[0].fitness+"\n";  
+            populationCycleElitism.Pmut1=P1ec;//mutation probabilities
+            populationCycleElitism.Pmut2=P2ec;
+            if(i==0){//write the type of cross, the generation number, the mean and the best individual
+              write[i]+="Elitism Cycle Crossover,"+Integer.toString(i)+","+Double.toString(populationCycleElitism.mean())+","+populationCycleElitism.Population[0].fitness+"\n";
             }
-            pnew3=pnew3.nextGenerationTournament(false,true);//obtains the next generation (cycle,elitism)
-            write[i+1]+="Elitism Cycle Crossover,"+Integer.toString(i+1)+","+Double.toString(pnew3.mean())+","+pnew3.Population[0].fitness+"\n";
+            populationCycleElitism=populationCycleElitism.nextGenerationTournament(false,true);//obtains the next generation (cycle,elitism)
+            write[i+1]+="Elitism Cycle Crossover,"+Integer.toString(i+1)+","+Double.toString(populationCycleElitism.mean())+","+populationCycleElitism.Population[0].fitness+"\n";
         
             
-            /*This part stores all the diferent solutions obtained in one of the other methods and plot them.
-            to select the method we have to  choose the pnew(*) number. nothing order ,1 cycle, 2 elit order, 3 elit cycle, 
+            /*This part stores all the different solutions obtained in one of the other methods and plot them.
+            to select the method we have to  choose the populationOrder(*) number. nothing order ,1 cycle, 2 elit order, 3 elit cycle,
             to enable this part, remove the commentaries marks -> /* code */
             
-            /* remove this
-            pant=pnew;
-            //pant=pnew1;
-            //pant=pnew2;
-            //pant=pnew3;
-            Arrays.sort(pant.Population);
-            if(pant.Population[0].fitness==0 ){
-                boolean esta=false;
-                for(String sr:list){
-                    if(sr == null ? pant.Population[0].name == null : sr.equals(pant.Population[0].name)){
-                        esta=true;
+            /* //remove this
+            previousPopulation=populationOrder;
+            //previousPopulation=populationCycle;
+            //previousPopulation=populationOrderElitism;
+            //previousPopulation=populationCycleElitism;
+            Arrays.sort(previousPopulation.Population);
+            if(previousPopulation.Population[0].fitness==0 ){
+                boolean isInPrevious=false;
+                for(String sr:listPreviousSolutions){
+                    if(sr == null ? previousPopulation.Population[0].name == null : sr.equals(previousPopulation.Population[0].name)){
+                        isInPrevious=true;
                         break;
                     }
                 }
-                if(!esta){
-                    list[i]=pant.Population[0].name;
-                    tablero t= new tablero();
-                    controlador con= new controlador(t,pant.Population[0].getGenome());
+                if(!isInPrevious){
+                    listPreviousSolutions[i]=previousPopulation.Population[0].name;
+                    new Controller(new Board(),previousPopulation.Population[0].getGenome());
                 }
-
             }
             */ //remove this
         }
+
         //write the last population calculated in each method.
         for(int i=0;i<Population.size;i++){
-            write2[0]+="Order Crossover,"+pnew.Population[i].name+","+Integer.toString(pnew.Population[i].fitness)+"\n";
-            write2[1]+="Cycle Crossover,"+pnew1.Population[i].name+","+Integer.toString(pnew1.Population[i].fitness)+"\n";
-            write2[2]+="Elitism Order Crossover,"+pnew2.Population[i].name+","+Integer.toString(pnew2.Population[i].fitness)+"\n";
-            write2[3]+="Elitism Cycle Crossover,"+pnew3.Population[i].name+","+Integer.toString(pnew3.Population[i].fitness)+"\n";
+            write2[0]+="Order Crossover,"+populationOrder.Population[i].name+","+Integer.toString(populationOrder.Population[i].fitness)+"\n";
+            write2[1]+="Cycle Crossover,"+populationCycle.Population[i].name+","+Integer.toString(populationCycle.Population[i].fitness)+"\n";
+            write2[2]+="Elitism Order Crossover,"+populationOrderElitism.Population[i].name+","+Integer.toString(populationOrderElitism.Population[i].fitness)+"\n";
+            write2[3]+="Elitism Cycle Crossover,"+populationCycleElitism.Population[i].name+","+Integer.toString(populationCycleElitism.Population[i].fitness)+"\n";
         }
         
         //These populations sorts are done only for interpreting the results.  
-        Arrays.sort(pnew.Population);
-        Arrays.sort(pnew1.Population);
-        Arrays.sort(pnew2.Population);
-        Arrays.sort(pnew3.Population);
+        Arrays.sort(populationOrder.Population);
+        Arrays.sort(populationCycle.Population);
+        Arrays.sort(populationOrderElitism.Population);
+        Arrays.sort(populationCycleElitism.Population);
         
         //Print the results order.
         System.out.println("Order Crossover");
-        System.out.println("Mutation probabilities = ("+pnew.Pmut1+","+pnew.Pmut2+")");
-        System.out.println("Population fitness"+pnew);
-        tablero torder= new tablero();
-        if (pnew.Population[0].fitness==0){torder.setTitle("Order");}
+        System.out.println("Mutation probabilities = ("+populationOrder.Pmut1+","+populationOrder.Pmut2+")");
+        System.out.println("Population fitness:  "+populationOrder);
+        Board torder= new Board();
+        if (populationOrder.Population[0].fitness==0){torder.setTitle("Order");}
         else{torder.setTitle("Order didn't find an optimal solution.");}
-        controlador conorder= new controlador(torder,pnew.Population[0].getGenome());
-        for(Population.Candidate c:pnew.Population){
+        new Controller(torder,populationOrder.Population[0].getGenome());
+        for(Population.Candidate c:populationOrder.Population){
             if(c.fitness==0){
                 System.out.print( c.name+ "->");
             }
@@ -155,14 +153,14 @@ public class N_Queen_problem {
         
         //Print the results cycle.
         System.out.println("Cycle Crossover");
-        System.out.println("Mutation probabilities = ("+pnew1.Pmut1+","+pnew1.Pmut2+")");
-        System.out.println("Population fitness"+pnew1);
-        tablero tcycle= new tablero();
-        if (pnew.Population[0].fitness==0){tcycle.setTitle("Cycle");}
+        System.out.println("Mutation probabilities = ("+populationCycle.Pmut1+","+populationCycle.Pmut2+")");
+        System.out.println("Population fitness:  "+populationCycle);
+        Board tcycle= new Board();
+        if (populationCycle.Population[0].fitness==0){tcycle.setTitle("Cycle");}
         else{tcycle.setTitle("Cycle didn't find an optimal solution.");}
         
-        controlador concyce= new controlador(tcycle,pnew1.Population[0].getGenome());
-        for(Population.Candidate c:pnew1.Population){
+        new Controller(tcycle,populationCycle.Population[0].getGenome());
+        for(Population.Candidate c:populationCycle.Population){
             if(c.fitness==0){
                 System.out.print( c.name+ "->");
             }
@@ -171,14 +169,14 @@ public class N_Queen_problem {
         
         //Print the results elite order.
         System.out.println("Elite order Crossover");
-        System.out.println("Mutation probabilities = ("+pnew2.Pmut1+","+pnew2.Pmut2+")");
-        System.out.println("Population fitness"+pnew2);
-        tablero torderelit= new tablero();
-        if (pnew.Population[0].fitness==0){torderelit.setTitle("Elite Order");}
+        System.out.println("Mutation probabilities = ("+populationOrderElitism.Pmut1+","+populationOrderElitism.Pmut2+")");
+        System.out.println("Population fitness:  "+populationOrderElitism);
+        Board torderelit= new Board();
+        if (populationOrderElitism.Population[0].fitness==0){torderelit.setTitle("Elite Order");}
         else{torderelit.setTitle("Elite order didn't find an optimal solution.");}
         
-        controlador conorderelit= new controlador(torderelit,pnew2.Population[0].getGenome());
-        for(Population.Candidate c:pnew2.Population){
+        new Controller(torderelit,populationOrderElitism.Population[0].getGenome());
+        for(Population.Candidate c:populationOrderElitism.Population){
             if(c.fitness==0){
                 System.out.print( c.name+ "->");
             }
@@ -187,14 +185,14 @@ public class N_Queen_problem {
         
         //Print the results elite cycle.
         System.out.println("Elite cycle Crossover");
-        System.out.println("Mutation probabilities = ("+pnew3.Pmut1+","+pnew3.Pmut2+")");
-        System.out.println("Population fitness"+pnew3);
-        tablero tcycleelit= new tablero();
-        if (pnew.Population[0].fitness==0){tcycleelit.setTitle("Elite Cycle");}
+        System.out.println("Mutation probabilities = ("+populationCycleElitism.Pmut1+","+populationCycleElitism.Pmut2+")");
+        System.out.println("Population fitness: "+populationCycleElitism);
+        Board tcycleelit= new Board();
+        if (populationCycleElitism.Population[0].fitness==0){tcycleelit.setTitle("Elite Cycle");}
         else{tcycleelit.setTitle("Elite cycle didn't find an optimal solution.");}
         
-        controlador concyceelit= new controlador(tcycleelit,pnew3.Population[0].getGenome());
-        for(Population.Candidate c:pnew3.Population){
+        new Controller(tcycleelit,populationCycleElitism.Population[0].getGenome());
+        for(Population.Candidate c:populationCycleElitism.Population){
             if(c.fitness==0){
                 System.out.print( c.name+ "->");
             }

@@ -7,9 +7,9 @@ import java.util.stream.IntStream;
 
 /*Class containing the population and the methods intrinsic to it, such as Next Generation*/
 public class Population {
-    public  static int size;//Population's size.
-    public static  int n;
-    public double Pmut1,Pmut2;//probabilities of mutation.
+    public  static int size;            //Population's size.
+    public static  int numberOfQueens;
+    public double Pmut1,Pmut2;          //probabilities of mutation.
     public  Candidate [] Population=new Candidate [size];//An array containing the 
                                                         //individuals of the population.
     
@@ -20,7 +20,7 @@ public class Population {
     // Set the global class variables.
     public static void setVars(int siz, int queens){
         size=siz;
-        n=queens;
+        numberOfQueens =queens;
         System.out.println("Queen Number = "+ Integer.toString(queens));
         System.out.println("Population Size = "+ Integer.toString(siz));
     };
@@ -30,6 +30,7 @@ public class Population {
             Population[i]=Population.this.new Candidate();//call to the subclass
         }
     }
+
     // Returns a new population corresponding to a next generation using the Tournament
     // selection strategy and a more exploitatory option, the elitism.
     public Population nextGenerationTournament(boolean Order,boolean Elitism){
@@ -37,7 +38,7 @@ public class Population {
         Random ran=new Random();//instance of new random variable.
         NewPop.Pmut1=this.Pmut1;
         NewPop.Pmut2=this.Pmut2;
-        for(int j=0;j<size-1;j+=2){//generates 2 random integers to select a subset of the populaton.
+        for(int j=0;j<size-1;j+=2){//generates 2 random integers to select a subset of the population.
             int rand1=ran.nextInt(size),rand2=ran.nextInt(size), start, end;
             Candidate [] figth;
             if(rand1<=rand2){
@@ -59,7 +60,7 @@ public class Population {
             
             Arrays.sort(figth);//the tournament.
             Candidate Parent1=figth[0];//the winner is the 1st parent.
-            rand1=ran.nextInt(size);rand2=ran.nextInt(size);//repeating the proces for the second parent.
+            rand1=ran.nextInt(size);rand2=ran.nextInt(size);//repeating the process for the second parent.
             if(rand1<=rand2){
                 start=rand1;end=rand2;
                 figth=new Candidate[1+end-start];//stores the subset for tournament.
@@ -80,36 +81,37 @@ public class Population {
             Candidate Parent2=figth[0];//the second parent
             Candidate [] children;
             if(Order){
-            children=this.orderCrossOver(Parent1, Parent2);//ciclecrossOver to have 2 children.
+                children=this.orderCrossOver(Parent1, Parent2);//cycleCrossOver to have 2 children.
             }else{
-            children=this.cycleCrossOver(Parent1, Parent2);//ciclecrossOver to have 2 children.
+                children=this.cycleCrossOver(Parent1, Parent2);//cycleCrossOver to have 2 children.
             }
             NewPop.Population[j]=children[0];NewPop.Population[j+1]=children[1];
         }
         if(Elitism){
-        Population temp=this;
-        Arrays.sort(temp.Population);//sort for the elitism if needed.
-        NewPop.Population[size-2]=temp.Population[0];NewPop.Population[size-1]=temp.Population[1];
+            Population temp=this;
+            Arrays.sort(temp.Population);//sort for the elitism if needed.
+            NewPop.Population[size-2]=temp.Population[0];NewPop.Population[size-1]=temp.Population[1];
         }
         return NewPop;
     }
+
     //Order crossOver between 2 individuals.
     public Candidate[] orderCrossOver(Candidate C1,Candidate C2){
         Candidate child1= new Candidate(),child2=new Candidate();//generating two children Candidates
         final int [] genomeP1=C1.getGenome(),genomeP2=C2.getGenome(),//generating some arrays 
-                genomeC1=new int [n],  //with the genomes(parents and children)
-                genomeC2=new int [n];
+                genomeC1=new int [numberOfQueens],  //with the genomes(parents and children)
+                genomeC2=new int [numberOfQueens];
         
          Random ran=new Random();//new random variable to select the sizes of the genomes cuts.
-         int rand1=ran.nextInt(n),rand2=ran.nextInt(n);
+         int rand1=ran.nextInt(numberOfQueens),rand2=ran.nextInt(numberOfQueens);
          if(rand1<=rand2){      //divides the problem depending on the randoms, but each part does the same.
              for(int i=rand1;i<=rand2;i++){//copies the selected block to the child in the correct position.
                  genomeC1[i]=genomeP1[i];
                  genomeC2[i]=genomeP2[i];
              }
-            for(int i=0;i<n;i++){//copies the rest of the genome from the other parent following his order.
+            for(int i = 0; i< numberOfQueens; i++){//copies the rest of the genome from the other parent following his order.
                 if(i<rand1||i>rand2){ //we only need to fill in the gaps in the genome.
-                    for(int j=0;j<n;j++){ //go through all the 2º parent's genome.
+                    for(int j = 0; j< numberOfQueens; j++){ //go through all the 2º parent's genome.
                         final int l=genomeP2[j];//needed for the lambda expression.
                         if(!IntStream.of(genomeC1).anyMatch(x -> x==l)){//check if it is in the child's genome
                             genomeC1[i]=genomeP2[j];            //if not, it is added in the corresponding position.
@@ -117,7 +119,7 @@ public class Population {
                             continue;
                         } break;
                     }
-                    for(int j=0;j<n;j++){//the same for the second child changing the parent's role.
+                    for(int j = 0; j< numberOfQueens; j++){//the same for the second child changing the parent's role.
                         final int l=genomeP1[j];
                         if(!IntStream.of(genomeC2).anyMatch(x -> x==l)){
                             genomeC2[i]=genomeP1[j];
@@ -130,7 +132,7 @@ public class Population {
             }
             
          }else{//the same for the other random situation.
-             for(int i=rand1;i<n;i++){
+             for(int i = rand1; i< numberOfQueens; i++){
                  genomeC1[i]=genomeP1[i];
                  genomeC2[i]=genomeP2[i];
              }
@@ -138,9 +140,9 @@ public class Population {
                  genomeC1[i]=genomeP1[i];
                  genomeC2[i]=genomeP2[i];
              }
-             for(int i=0;i<n;i++){
+             for(int i = 0; i< numberOfQueens; i++){
                 if(i>rand2 && i<rand1){
-                    for(int j=0;j<n;j++){
+                    for(int j = 0; j< numberOfQueens; j++){
                         final int l=genomeP2[j];
                         if(!IntStream.of(genomeC1).anyMatch(x -> x==l)){
                             genomeC1[i]=genomeP2[j];
@@ -148,7 +150,7 @@ public class Population {
                             continue;
                         }break;
                     }
-                    for(int j=0;j<n;j++){
+                    for(int j = 0; j< numberOfQueens; j++){
                         final int l=genomeP1[j];
                         if(!IntStream.of(genomeC2).anyMatch(x -> x==l)){
                             genomeC2[i]=genomeP1[j];
@@ -164,19 +166,20 @@ public class Population {
         child2.setGenome(genomeC2);
         child1.Pmut1=this.Pmut1;child2.Pmut1=this.Pmut1;
         child1.Pmut2=this.Pmut2;child2.Pmut2=this.Pmut2;
-        child1.mutate();child2.mutate();//posible mutation of the children's genome.
-        Candidate[] childs={child1,child2};
-        return childs;
+        child1.mutate();child2.mutate();//possible mutation of the children's genome.
+        Candidate[] children={child1,child2};
+        return children;
     }
-    //Cicle crossOver between 2 individuals.
+
+    //Cycle crossOver between 2 individuals.
     public Candidate[] cycleCrossOver(Candidate C1,Candidate C2){
         Candidate child1= new Candidate(),child2=new Candidate();//generating two children Candidates
         final int [] genomeP1=C1.getGenome(),genomeP2=C2.getGenome(),//generating some arrays 
-                genomeC1=new int [n],  //with the genomes(parents and children)
-                genomeC2=new int [n];
+                genomeC1=new int [numberOfQueens],  //with the genomes(parents and children)
+                genomeC2=new int [numberOfQueens];
         Map<Integer,Integer> P1copy=new HashMap<>(),P2copy=new HashMap<>(),
                 copyP1=new HashMap<>(), copyP2=new HashMap<>();
-        for(int i=0;i<n;i++){
+        for(int i = 0; i< numberOfQueens; i++){
             P1copy.put(i, genomeP1[i]);
             P2copy.put(i, genomeP2[i]);
             copyP1.put(genomeP1[i],i);
@@ -212,7 +215,7 @@ public class Population {
                 }while(genomeP2[keys[ran1]]!=newVal);
             }
         }
-        for(int i=0;i<n;i++){
+        for(int i = 0; i< numberOfQueens; i++){
             P1copy.put(i, genomeP1[i]);
             P2copy.put(i, genomeP2[i]);
         }
@@ -245,33 +248,34 @@ public class Population {
         child2.setGenome(genomeC2);
         child1.Pmut1=this.Pmut1;child2.Pmut1=this.Pmut1;
         child1.Pmut2=this.Pmut2;child2.Pmut2=this.Pmut2;
-        child1.mutate();child2.mutate();//posible mutation of the children's genome.
-        Candidate[] childs={child1,child2};
-        return childs;
+        child1.mutate();child2.mutate();//possible mutation of the children's genome.
+        Candidate[] children={child1,child2};
+        return children;
     }
     
-    //Check the mean of the all genome fitness(cambiarlo por lo que sea necesario).
+    //Compute the mean fitness of the population.
     public double mean(){
-        double mean=0;
+        double mean=0.0;
         Candidate []copi=this.Population;
         for(int i=0;i<size;i++){
             mean+=copi[i].fitness;
         }
         return mean/(size);
-        //return Math.pow(mean/size,1);
     }
+
     //To print on the screen the fitness of the population individuals.
     @Override
     public String toString() {
         String sr="";
         for(int i=0;i<size-1;i++){
-            sr= sr+ Population[i].fitness+"->";
+            sr= sr+ Population[i].fitness+"-->";
         }sr= sr+ Population[size-1].fitness;
         return sr;
     }
+
     /*Subclass that represents the individual belonging to the population*/
     public class Candidate extends Population implements Comparable <Candidate>{
-        private int[] genome=new int[n];//array with the genome
+        private int[] genome=new int[numberOfQueens];//array with the genome
         public int fitness;//fitness of the individual.
         public String name;
            
@@ -280,8 +284,8 @@ public class Population {
               
         //Instance of the object, generating his genome randomly.
         public Candidate() {
-            List<Integer> numbers = new ArrayList<>(n);//needed to shuffle.
-            for (int i=0;i<n;i++){//sorted array.
+            List<Integer> numbers = new ArrayList<>(numberOfQueens);//needed to shuffle.
+            for (int i = 0; i< numberOfQueens; i++){//sorted array.
                    numbers.add(i);
             }
             Collections.shuffle(numbers);//shuffle.
@@ -292,18 +296,19 @@ public class Population {
             fitness=this.fitness();
             this.setName();
         }
+
         //Calculates the fitness of the individual.
         private int fitness(){
             int t=0;//to storage the fitness.
-            int [] f1=new int [n],f2=new int [n];//to store the altered genome.
+            int [] f1=new int [numberOfQueens],f2=new int [numberOfQueens];//to store the altered genome.
             
-            for(int i=0;i<n;i++){//stores the  genome considering only diagonals.
+            for(int i = 0; i< numberOfQueens; i++){//stores the  genome considering only diagonals.
                 f1[i]=this.genome[i]-i;//forward
-                f2[i]=n-this.genome[i]-i;//backward
+                f2[i]= numberOfQueens -this.genome[i]-i;//backward
             }
             Arrays.sort(f1);//sort
             Arrays.sort(f2);
-            for(int i=1;i<n;i++){//computes the fitness.
+            for(int i = 1; i< numberOfQueens; i++){//computes the fitness.
                 if(f1[i]==f1[i-1]){
                     t+=2;
                 }if(f2[i]==f2[i-1]){
@@ -312,48 +317,55 @@ public class Population {
             }
          return t;   
         }
-        //Mutate the individual genome.
+
+        //Mutate the individual genomes.
         public void mutate(){
             Random ran=new Random();//random to select 2 genes from the genome and if the mutation happens.
             if(ran.nextDouble()<=Pmut1){//single mutation probability.
-                int rand1=ran.nextInt(n),rand2=ran.nextInt(n);
+                int rand1=ran.nextInt(numberOfQueens),rand2=ran.nextInt(numberOfQueens);
                 int val1=genome[rand1],val2=genome[rand2];
                 genome[rand1]=val2;genome[rand2]=val1;  //interchanging genes.
             }
             if(ran.nextDouble()<=Pmut2){//double mutation probability.
-                    int rand1=ran.nextInt(n),rand2=ran.nextInt(n);
+                    int rand1=ran.nextInt(numberOfQueens),rand2=ran.nextInt(numberOfQueens);
                     int val1=genome[rand1], val2=genome[rand2];
                     genome[rand1]=val2;genome[rand2]=val1;//interchanging genes.
                 }
             fitness=this.fitness();//recalculates the fitness after the mutation.
             this.setName();//recalculates the name
         }
+
         //Sets the genome of the individual.
         public void setGenome(int[] genome) {
             this.genome = genome;//sets the genome.
             fitness=this.fitness();//recalculates the fitness.
             this.setName();//recalculates the name
         }
+
         //Return the genome.
         public int[] getGenome() {
             return genome;
         }
+
+        //Sets the name of the genome.
         private void setName(){
             name="";
             for(int i:this.genome){
                 name+=i+";";
             }
         }
-        //To print in the sreen.
+
+        //To print in the screen.
         @Override
         public String toString() {
             String sr="";
             for(int i:this.genome){
                 sr+= i+", ";
             }
-            return "Cenoma=" + sr;
+            return "Genome = " + sr;
         }
-        //to be able to compare these objects(Candidate)(allows the usage of the sort function.)
+
+        // To be able to compare these objects(Candidate)(allows the usage of the sort function.)
         @Override
         public int compareTo(Candidate t) {
             if(this.fitness>t.fitness){

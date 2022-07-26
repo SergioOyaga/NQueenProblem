@@ -2,9 +2,10 @@ library(bigvis)
 library(tidyverse)
 library(ggplot2)
 
-############## Set the working directory in the Juego_Ajedrez folder. #####################
-
-tibble_8Q=as_tibble(read.csv(file = "archivo.csv",header = T))
+# Set the working directory where the files ale placed or edit the full path in each file read.
+tibble_8Q=as_tibble(read.csv(file = "file.csv",header = T))
+tibble_8Q2=as_tibble(read.csv(file = "file1.csv",header = T))
+generations = 200 #Adjust the length to the number of generations used in the java code.
 
 ggplot(data=tibble_8Q,aes(x=Generation,y=Mean,color=Type.of.crossover))+
   scale_color_manual(values=c("#F300FF","#feba04","#0024b6","#51FF33"))+
@@ -13,7 +14,7 @@ ggplot(data=tibble_8Q,aes(x=Generation,y=Mean,color=Type.of.crossover))+
   theme(legend.justification=c(1,1), legend.position=c(1,1))+
   theme(legend.background = element_rect(fill="gray90", size=.5))+
   ggtitle("Populations fitness mean.")+
-  scale_x_continuous(limit = c(0,1000))
+  scale_x_continuous(limit = c(0,generations))
 
 ggplot(data=tibble_8Q,aes(x=Generation,y=Best,color=Type.of.crossover))+
   scale_color_manual(values=c("#F300FF","#feba04","#0024b6","#51FF33"))+
@@ -21,12 +22,8 @@ ggplot(data=tibble_8Q,aes(x=Generation,y=Best,color=Type.of.crossover))+
   theme(legend.justification=c(1,1), legend.position=c(1,1))+
   theme(legend.background = element_rect(fill="gray90", size=.5))+
   ggtitle("Comparation between the best individual from each technique.")+
-  scale_x_continuous(limit = c(0,200))
+  scale_x_continuous(limit = c(0,generations))
 
-tibble_8Q
-  
-
-tibble_8Q2=as_tibble(read.csv(file = "archivo1.csv",header = T))
 
 ggplot(data=tibble_8Q2,aes(x=fitness,fill=name))+
   facet_grid(. ~ Type.of.crossover, scales="free")+
