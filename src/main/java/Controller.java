@@ -1,4 +1,3 @@
-package N_Queen_problem;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -8,9 +7,9 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 public class Controller {
-    public static Pieces[][] boardMatrix;   // Board array matrix
+    public Pieces[][] boardMatrix;   // Board array matrix
     public Board board;                     // Board object
-    private final BufferedImage whiteQueen = ImageIO.read(getClass().getResource("/Images/whiteQueen.png"));    // Queen Image
+    private final BufferedImage whiteQueen = ImageIO.read(this.getClass().getResource("/Images/whiteQueen.png"));// Queen Image
     
     //Set the queens in the board.
     public Controller(Board board, int [] positions) throws IOException {

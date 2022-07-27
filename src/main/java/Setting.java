@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package N_Queen_problem;
-
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
@@ -436,7 +429,7 @@ public class Setting extends JFrame {
         this.setVisible(false);
         try {
             Population.setVars((int) populationSizeJSpinner.getValue(),(int) nQueensJSpinner.getValue());
-            N_Queen_problem.runGenetic((int) nGenerationsJSpinner.getValue(), orderP1JSlider.getValue()/1000.0,
+            NQueenProblem.runGenetic((int) nGenerationsJSpinner.getValue(), orderP1JSlider.getValue()/1000.0,
                     orderP2JSlider.getValue()/1000.0, cycleP1JSlider.getValue()/1000.0,
                     cycleP2JSlider.getValue()/1000.0, eliteOrderP1JSlider.getValue()/1000.0,
                     eliteOrderP2JSlider.getValue()/1000.0, eliteCycleP1JSlider.getValue()/1000.0, eliteCycleP2JSlider.getValue()/1000.0);

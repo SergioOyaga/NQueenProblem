@@ -1,5 +1,3 @@
-package N_Queen_problem;
-
 /**
  * Parent class containing the piece types.
  */
