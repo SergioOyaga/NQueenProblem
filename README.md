@@ -121,8 +121,9 @@ The last image shows how many genomes are presented in the last best population.
 converged to the minimum with the exact same genome (i.e. the same solution).
 
 ## Build
-You can find a .jar executable in [out/artifacts/NQueenProblem/NQueenProblem.jar](https://github.com/SergioOyaga/N-Queen_Problem/blob/master/out/artifacts/NQueenProblem/NQueenProblem.jar)
+You can find a .jar executable in [out/artifacts/NQueenProblem/NQueenProblem.jar](https://github.com/SergioOyaga/N-Queen_Problem/blob/master/out/artifacts/NQueenProblem_jar/NQueenProblem.jar)
 ```console
+cd path/to/NQueenProblem/module
 java -jar path/to/JARfile/NQueenProblem.jar
 ```
 
